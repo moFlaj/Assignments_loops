@@ -4,7 +4,7 @@ public class PrimeNumber{
 		public static void main(String[] args){
 
 		Scanner input = new Scanner(System.in);
-		System.out.print("Enter number greater than divisor: ");
+		System.out.print("Enter number to check if it is a prime number: ");
 		int number = input.nextInt();
 
 		int i = number;
@@ -19,7 +19,7 @@ public class PrimeNumber{
 			
 }
 		if(counter == number - 2){
-		System.out.printf("%d is a prime number", number);}
+		System.out.printf("%d is a prime number.%n", number);}
 		else{System.out.printf("%d is not a prime number.%n", number);}
 
 }
