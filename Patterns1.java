@@ -4,7 +4,7 @@ public class Patterns1{
 		int number = 1;
 		int number2 = 1;
 
-		for(int counter = 6; counter > 0; counter--){
+		for(int counter = 6; counter > 0; --counter){
 		System.out.printf("%d	", number);
 
 		
@@ -12,17 +12,16 @@ public class Patterns1{
 
 			for(int counter1 = 1; counter1 < counter ; counter1++){
 
-			System.out.printf("%d	", number2++);
+			System.out.printf("%d	", ++number2);
 
 			
 			}}
 
 			
-			number2 = 2;
+			number2 = 1;
 			System.out.println();}
 			
 			
-
 
 
 }
