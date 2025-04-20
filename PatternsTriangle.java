@@ -15,8 +15,6 @@ public class PatternsTriangle{
 
 			System.out.println();}
 
-			System.out.println();
-			
 
 		for(int counter = 10; counter > 0; --counter){
 		System.out.printf("*" );
@@ -30,9 +28,6 @@ public class PatternsTriangle{
 			}}
 
 			System.out.println();}
-
-			System.out.println();
-
 
 		for(int counter = 10; counter > 0; --counter){
 			if(counter == 9){
