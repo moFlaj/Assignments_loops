@@ -73,13 +73,16 @@ System.out.println(phoneBook);
 					System.out.println(options);
 					userInput = input.nextInt();
 					switch(userInput){
-						case 1: 	System.out.println("Type of view");break;
-						case 2: 	System.out.println("Memory status");break;}
+						case 1: System.out.println("Type of view");break;
+						case 2: System.out.println("Memory status");break;
+						default: System.out.println("Invalid directory");break;
+}
 
 //Case 8 break after this line
 				break;
 				case 9: System.out.println("Speed dials");break;
 				case 10: System.out.println("Voice tags");break;
+				default: System.out.println("Invalid directory");break;
 }
 //Case 1 phonebook break after this line
 break;
@@ -120,6 +123,7 @@ System.out.println(setOne);
 								case 1: System.out.println("Message centre number");break;
 								case 2: System.out.println("Messages sent as");break;
 								case 3: System.out.println("Message validity");break;
+								default: System.out.println("Invalid directory");break;
 }
 break;
 							case 2: common = """
@@ -131,7 +135,8 @@ System.out.println(common);
 								switch(userInput){
 									case 1: System.out.println("Delivery Reports");break;
 									case 2: System.out.println("Reply via same centre");break;
-									case 3: System.out.println("Delivery Reports"); break;					
+									case 3: System.out.println("Delivery Reports"); break;
+									default: System.out.println("Invalid directory");break;					
 }
 break;
 }
@@ -139,6 +144,7 @@ break;
 				case 8: System.out.println("Info service");break;
 				case 9: System.out.println("Voice mailbox number");break;
 				case 10: System.out.println("Character support");break;
+				default: System.out.println("Invalid directory");break;
 }
 break;
 			case 3: System.out.println("Chat");break;
@@ -172,6 +178,7 @@ System.out.println(callDuration);
 							case 3: System.out.println("Received calls duration"); break;
 							case 4: System.out.println("Dialled calls duration"); break;
 							case 5: System.out.println("Clear timers"); break;
+							default: System.out.println("Invalid directory");break;
 }
 break;
 					case 6: callCosts = """
@@ -184,6 +191,7 @@ System.out.println(callCosts);
 							case 1: System.out.println("Last call cost");break;
 							case 2: System.out.println("All calls costs");break;
 							case 3: System.out.println("Clear counters");break;
+							default: System.out.println("Invalid directory");break;
 
 }
 break;
@@ -195,9 +203,11 @@ System.out.println(callCostSettings);
 						switch(userInput){
 							case 1: System.out.println("Call cost limit");break;
 							case 2: System.out.println("Show costs in");break;
+							default: System.out.println("Invalid directory");break;
 }
 break;
 					case 8: System.out.println("Prepaid credit");break;
+					default: System.out.println("Invalid directory");break;
 }
 break;
 			case 5: tones = """
@@ -223,6 +233,7 @@ System.out.println(tones);
 					case 7: System.out.println("Warning and game tones");break;
 					case 8: System.out.println("Vibrating alert");break;
 					case 9: System.out.println("Screen saver");break;
+					default: System.out.println("Invalid directory");break;
 }
 break;
 			case 6: settings = """
@@ -249,6 +260,7 @@ System.out.println(callSettings);
 							case 4: System.out.println("Own number sending");break;
 							case 5: System.out.println("Phone line in use");break;
 							case 6: System.out.println("Automatic answer");break;
+							default: System.out.println("Invalid directory");break;
 							
 }
 break;
@@ -268,6 +280,7 @@ System.out.println(phoneSettings);
 							case 4: System.out.println("Network selection");break;
 							case 5: System.out.println("Lights");break;
 							case 6: System.out.println("Confirm SIM service actions");break;
+							default: System.out.println("Invalid directory");break;
 }
 break;
 					case 3: securitySettings = """
@@ -286,9 +299,11 @@ System.out.println(securitySettings);
 							case 4: System.out.println("Closed user group");break;
 							case 5: System.out.println("Phone security");break;
 							case 6: System.out.println("Change access codes");break;
+							default: System.out.println("Invalid directory");break;
 }
 break;
 					case 4: System.out.println("Restore factory settings");break;
+					default: System.out.println("Invalid directory");break;
 }
 break;
 			case 7: System.out.println("Call divert");break;
@@ -311,10 +326,12 @@ System.out.println(clock);
 					case 4: System.out.println("Stopwatch");break;
 					case 5: System.out.println("Countdown timer");break;
 					case 6: System.out.println("Auto update of date and time");break;
+					default: System.out.println("Invalid directory");break;
 }
 break;
 			case 12: System.out.println("Profiles");break;
 			case 13: System.out.println("SIM services");break;
+			default: System.out.println("Invalid directory");break;
 }
 
 
