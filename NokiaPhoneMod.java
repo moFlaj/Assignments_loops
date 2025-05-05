@@ -59,6 +59,18 @@ public class NokiaPhoneMod{
 		Boolean messValid = true;
 		Boolean mesCentNum = true;
 		Boolean messSentAs = true;
+		Boolean infoService = true;
+		Boolean voiceMail = true;
+		Boolean servCommand = true;
+		Boolean characterSupport = true;
+		Boolean replySameCentre = true;
+		Boolean deliveryRep = true;
+		Boolean chat = true;
+		Boolean missedCalls = true;
+		Boolean receivedCalls = true;
+		Boolean dialledNum = true;
+		Boolean eraseRecent = true;
+			
 		while(restart){
 menu = """
 1. Phonebook
@@ -83,6 +95,13 @@ callReg = true;
 toNes = true;
 setTings = true;
 clock = true;
+chat = true;
+Boolean callDivert = true;
+Boolean games = true;
+Boolean calculator = true;
+Boolean reminder = true;
+Boolean profile = true;
+Boolean simServices = true;
 			switch(userInput){
 				case 0: restart = false; break;
 				case 1: 
@@ -106,6 +125,15 @@ userInput = input.nextInt();
 opTions = true;
 phoneB = true;
 search = true;
+serviceNum = true;
+addName = true;
+erase = true;
+edit = true;
+assignTone = true;
+card = true;
+speedDials = true;
+voiceTags = true;
+
 				switch(userInput){
 					case 0: phoneB = false;break;
 					case 1: while(search){System.out.println("Search");userInput = input.nextInt();switch(userInput){case 0: search = false;continue; default: System.out.println("Invalid directory");}}break;
@@ -156,6 +184,17 @@ messages = """
 System.out.println(messages);
 userInput = input.nextInt();
 messageseTtings = true;
+writeText = true;
+inbox = true;
+outbox = true;
+picText = true;
+templates = true;
+smileys = true;
+infoService = true;
+voiceMail = true;
+servCommand = true;
+
+
 				switch(userInput){
 					case 0: meSsages = false;break;
 					case 1: while(writeText){System.out.println("Write messages");userInput = input.nextInt();switch(userInput){case 0: writeText = false; continue;default: System.out.println("Invalid directory");break;}}break;
@@ -183,6 +222,9 @@ setOne = """
 3. Message validity""";
 System.out.println(setOne);
 userInput = input.nextInt();
+mesCentNum = true;
+messValid = true;
+messValid = true;
 						switch(userInput){
 
 							case 0: seTone = false;break;
@@ -201,11 +243,15 @@ common = """
 3. Character support""";
 System.out.println(common);
 userInput = input.nextInt();
+deliveryRep = true;
+replySameCentre = true;
+characterSupport = true;
+
 							switch(userInput){
 								case 0: comMon = false;break;
-								case 1: System.out.println("Delivery Reports");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 2: System.out.println("Reply via same centre");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 3: System.out.println("Character support");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+								case 1: while(deliveryRep){System.out.println("Delivery Reports");userInput = input.nextInt();switch(userInput){case 0: deliveryRep = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 2: while(replySameCentre){System.out.println("Reply via same centre");userInput = input.nextInt();switch(userInput){case 0: replySameCentre = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 3: while(characterSupport){System.out.println("Character support");userInput = input.nextInt();switch(userInput){case 0: characterSupport = false; continue;default: System.out.println("Invalid directory");break;}}break;
 								default: System.out.println("Invalid directory");break;
 
 }
@@ -217,16 +263,16 @@ continue;
 }
 
 continue;
-					case 8: System.out.println("Info service");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-					case 9: System.out.println("Voice mailbox number");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-					case 10: System.out.println("Service command editor");userInput = input.nextInt();switch(userInput){case 0: continue;}
+					case 8: while(infoService){System.out.println("Info service");userInput = input.nextInt();switch(userInput){case 0: infoService = false; continue;default: System.out.println("Invalid directory");break;}}break;
+					case 9: while(voiceMail){System.out.println("Voice mailbox number");userInput = input.nextInt();switch(userInput){case 0: voiceMail = false; continue;default: System.out.println("Invalid directory");break;}}break;
+					case 10: while(servCommand){System.out.println("Service command editor");userInput = input.nextInt();switch(userInput){case 0: servCommand = false; continue;default: System.out.println("Invalid directory");break;}}break;
 					default: System.out.println("Invalid directory");break;
 					
 
 }
 }
 continue;
-				case 3: System.out.println("Chat");userInput = input.nextInt();switch(userInput){case 0: continue;};
+				case 3: while(chat){System.out.println("Chat");userInput = input.nextInt();switch(userInput){case 0: chat = false; continue;default: System.out.println("Invalid directory");break;}}break;
 				case 4: 
 while(callReg){
 callRegister = """
@@ -243,12 +289,17 @@ userInput = input.nextInt();
 callDura = true;
 callCost = true;
 costSettings = true;
+missedCalls = true;
+receivedCalls = true;
+dialledNum = true;
+eraseRecent = true;
+Boolean prepCredit = true;
 					switch(userInput){
 						case 0: callReg = false;break;
-						case 1: System.out.println("Missed calls");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 2: System.out.println("Received calls");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 3: System.out.println("Dialled numbers");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 4: System.out.println("Erase recent call lists");userInput = input.nextInt();switch(userInput){case 0: continue;}
+						case 1: while(missedCalls){System.out.println("Missed calls");userInput = input.nextInt();switch(userInput){case 0: missedCalls = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 2: while(receivedCalls){System.out.println("Received calls");userInput = input.nextInt();switch(userInput){case 0: receivedCalls = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 3: while(dialledNum){System.out.println("Dialled numbers");userInput = input.nextInt();switch(userInput){case 0: dialledNum = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 4: while(eraseRecent){System.out.println("Erase recent call lists");userInput = input.nextInt();switch(userInput){case 0: eraseRecent = false; continue;default: System.out.println("Invalid directory");break;}}break;
 						case 5: 
 while(callDura){
 callDuration = """
@@ -259,13 +310,20 @@ callDuration = """
 5. Clear timers""";
 System.out.println(callDuration);
 userInput = input.nextInt();
+Boolean lastCall = true;
+Boolean allCallsDura = true;
+Boolean receivedCall = true;
+Boolean dialledCall = true;
+Boolean clearTimers = true;
+
+
 						switch(userInput){
 							case 0: callDura = false;break;
-							case 1: System.out.println("Last call duration");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-							case 2: System.out.println("All calls duration");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-							case 3: System.out.println("Received calls duration");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-							case 4: System.out.println("Dialled calls duration");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-							case 5: System.out.println("Clear timers");userInput = input.nextInt();switch(userInput){case 0: continue;}
+							case 1: while(lastCall){System.out.println("Last call duration");userInput = input.nextInt();switch(userInput){case 0: lastCall = false; continue;default: System.out.println("Invalid directory");break;}}break;
+							case 2: while(allCallsDura){System.out.println("All calls duration");userInput = input.nextInt();switch(userInput){case 0: allCallsDura = false; continue;default: System.out.println("Invalid directory");break;}}break;
+							case 3: while(receivedCall){System.out.println("Received calls duration");userInput = input.nextInt();switch(userInput){case 0: receivedCall = false; continue;default: System.out.println("Invalid directory");break;}}break;
+							case 4: while(dialledCall){System.out.println("Dialled calls duration");userInput = input.nextInt();switch(userInput){case 0: dialledCall = false; continue;default: System.out.println("Invalid directory");break;}}break;
+							case 5: while(clearTimers){System.out.println("Clear timers");userInput = input.nextInt();switch(userInput){case 0: clearTimers = false; continue;default: System.out.println("Invalid directory");break;}}break;
 							default: System.out.println("Invalid directory");break;
 }					
 }
@@ -278,11 +336,15 @@ callCosts = """
 3. Clear counters""";
 System.out.println(callCosts);
 userInput = input.nextInt();
+Boolean lastCallCosts = true;
+Boolean allCallsCosts = true;
+Boolean clearCounters = true;
+
 						switch(userInput){
 							case 0: callCost = false;break;
-							case 1: System.out.println("Last call cost");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-							case 2: System.out.println("All calls costs");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-							case 3: System.out.println("Clear counters");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+							case 1: while(lastCallCosts){System.out.println("Last call cost");userInput = input.nextInt();switch(userInput){case 0: lastCallCosts = false; continue;default: System.out.println("Invalid directory");break;}}break;
+							case 2: while(allCallsCosts){System.out.println("All calls costs");userInput = input.nextInt();switch(userInput){case 0: allCallsCosts = false; continue;default: System.out.println("Invalid directory");break;}}break;
+							case 3: while(clearCounters){System.out.println("Clear counters");userInput = input.nextInt();switch(userInput){case 0: clearCounters = false; continue;default: System.out.println("Invalid directory");break;}}break;
 							default: System.out.println("Invalid directory");break;
 }
 }
@@ -294,15 +356,17 @@ callCostSettings = """
 2. Show costs in""";
 System.out.println(callCostSettings);
 userInput = input.nextInt();
+Boolean costLimit = true;
+Boolean showCosts = true;
 						switch(userInput){
 							case 0: costSettings = false;break;
-							case 1: System.out.println("Call cost limit");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-							case 2: System.out.println("Show costs in");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+							case 1: while(costLimit){System.out.println("Call cost limit");userInput = input.nextInt();switch(userInput){case 0: costLimit = false; continue;default: System.out.println("Invalid directory");break;}}break;
+							case 2: while(showCosts){System.out.println("Show costs in");userInput = input.nextInt();switch(userInput){case 0: showCosts = false; continue;default: System.out.println("Invalid directory");break;}}break;
 							default: System.out.println("Invalid directory");break;
 }
 }
 continue;
-						case 8: System.out.println("Prepaid credit");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+						case 8: while(prepCredit){System.out.println("Prepaid credit");userInput = input.nextInt();switch(userInput){case 0: prepCredit = false; continue;default: System.out.println("Invalid directory");break;}}break;
 						default: System.out.println("Invalid directory");break;
 }
 }
@@ -321,18 +385,27 @@ tones = """
 9. Screen saver""";
 System.out.println(tones);
 userInput = input.nextInt();
+Boolean screenSaver = true;
+Boolean vibratingAlert = true;
+Boolean gameTones = true;
+Boolean keypadTones = true;
+Boolean messageAlertTone = true;
+Boolean composer = true;
+Boolean incomingAlert = true;
+Boolean ringingVol = true;
+Boolean ringingTone = true;
 
 					switch(userInput){
 						case 0: toNes = false;break;
-						case 1: System.out.println("Ringing tone");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 2: System.out.println("Ringing volume");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 3: System.out.println("Incoming call alert");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 4: System.out.println("Composer");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 5: System.out.println("Message alert tone");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 6: System.out.println("Keypad tones");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 7: System.out.println("Warning and game tones");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 8: System.out.println("Vibrating alert");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 9: System.out.println("Screen saver");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+						case 1: while(ringingTone){System.out.println("Ringing tone");userInput = input.nextInt();switch(userInput){case 0: ringingTone = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 2: while(ringingVol){System.out.println("Ringing volume");userInput = input.nextInt();switch(userInput){case 0: ringingVol = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 3: while(incomingAlert){System.out.println("Incoming call alert");userInput = input.nextInt();switch(userInput){case 0: incomingAlert = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 4: while(composer){System.out.println("Composer");userInput = input.nextInt();switch(userInput){case 0: composer = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 5: while(messageAlertTone){System.out.println("Message alert tone");userInput = input.nextInt();switch(userInput){case 0: messageAlertTone = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 6: while(keypadTones){System.out.println("Keypad tones");userInput = input.nextInt();switch(userInput){case 0: keypadTones = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 7: while(gameTones){System.out.println("Warning and game tones");userInput = input.nextInt();switch(userInput){case 0: gameTones = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 8: while(vibratingAlert){System.out.println("Vibrating alert");userInput = input.nextInt();switch(userInput){case 0: vibratingAlert = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 9: while(screenSaver){System.out.println("Screen saver");userInput = input.nextInt();switch(userInput){case 0: screenSaver = false; continue;default: System.out.println("Invalid directory");break;}}break;
 						default: System.out.println("Invalid directory");break;
 						
 }
@@ -350,6 +423,7 @@ userInput = input.nextInt();
 callSettings = true;
 phoneSet = true;
 securitySet = true;
+Boolean restoreFactory = true;
 					switch(userInput){
 						case 0: setTings = false;break;
 						case 1: 
@@ -363,14 +437,20 @@ callseTtings = """
 6. Automatic answer""";
 System.out.println(callseTtings);
 userInput = input.nextInt();
+Boolean autoRedial = true;
+Boolean autoAnswer = true;
+Boolean phoneLine = true;
+Boolean ownNumberSend = true;
+Boolean speedDial = true;
+Boolean callWaiting = true;
 							switch(userInput){
 								case 0: callSettings = false;break;
-								case 1: System.out.println("Automatic redial");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 2: System.out.println("Speed dialing");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 3: System.out.println("Call waiting options");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 4: System.out.println("Own number sending");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 5: System.out.println("Phone line in use");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 6: System.out.println("Automatic answer");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+								case 1: while(autoRedial){System.out.println("Automatic redial");userInput = input.nextInt();switch(userInput){case 0: autoRedial = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 2: while(speedDial){System.out.println("Speed dialing");userInput = input.nextInt();switch(userInput){case 0: speedDial = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 3: while(callWaiting){System.out.println("Call waiting options");userInput = input.nextInt();switch(userInput){case 0: callWaiting = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 4: while(ownNumberSend){System.out.println("Own number sending");userInput = input.nextInt();switch(userInput){case 0: ownNumberSend = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 5: while(phoneLine){System.out.println("Phone line in use");userInput = input.nextInt();switch(userInput){case 0: phoneLine = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 6: while(autoAnswer){System.out.println("Automatic answer");userInput = input.nextInt();switch(userInput){case 0: autoAnswer = false; continue;default: System.out.println("Invalid directory");break;}}break;
 								default: System.out.println("Invalid directory");break;
 								
 }
@@ -387,14 +467,20 @@ phoneSettings = """
 6. Confirm SIM service actions""";
 System.out.println(phoneSettings);
 userInput = input.nextInt();
+Boolean confirmSim = true;
+Boolean lights = true;
+Boolean networkSelect = true;
+Boolean welcomeNote = true;
+Boolean cellInfo = true;
+Boolean language = true;
 							switch(userInput){
 								case 0: phoneSet = false; break;
-								case 1: System.out.println("Language");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 2: System.out.println("Cell info display");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 3: System.out.println("Welcome note");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 4: System.out.println("Network selection");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 5: System.out.println("Lights");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 6: System.out.println("Confirm SIM service actions");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+								case 1: while(language){System.out.println("Language");userInput = input.nextInt();switch(userInput){case 0: language = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 2: while(cellInfo){System.out.println("Cell info display");userInput = input.nextInt();switch(userInput){case 0: cellInfo = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 3: while(welcomeNote){System.out.println("Welcome note");userInput = input.nextInt();switch(userInput){case 0: welcomeNote = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 4: while(networkSelect){System.out.println("Network selection");userInput = input.nextInt();switch(userInput){case 0: networkSelect = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 5: while(lights){System.out.println("Lights");userInput = input.nextInt();switch(userInput){case 0: lights = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 6: while(confirmSim){System.out.println("Confirm SIM service actions");userInput = input.nextInt();switch(userInput){case 0: confirmSim = false; continue;default: System.out.println("Invalid directory");break;}}break;
 								default: System.out.println("Invalid directory");break;
 }
 }
@@ -410,30 +496,36 @@ securitySettings = """
 6. Change access codes""";
 System.out.println(securitySettings);
 userInput = input.nextInt();
-							switch(userInput){
+Boolean fixedDial = true;
+Boolean callBarring = true;
+Boolean pinCode = true;
+Boolean closedUser = true;
+Boolean phoneSec = true;
+Boolean changeAccess = true;
 
+							switch(userInput){
 								case 0: securitySet = false;break;
-								case 1: System.out.println("PIN code request");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 2: System.out.println("Call barring service");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 3: System.out.println("Fixed dialling");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 4: System.out.println("Closed user group");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 5: System.out.println("Phone security");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-								case 6: System.out.println("Change access codes");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+								case 1: while(pinCode){System.out.println("PIN code request");userInput = input.nextInt();switch(userInput){case 0: pinCode = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 2: while(callBarring){System.out.println("Call barring service");userInput = input.nextInt();switch(userInput){case 0: callBarring = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 3: while(fixedDial){System.out.println("Fixed dialling");userInput = input.nextInt();switch(userInput){case 0: fixedDial = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 4: while(closedUser){System.out.println("Closed user group");userInput = input.nextInt();switch(userInput){case 0: closedUser = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 5: while(phoneSec){System.out.println("Phone security");userInput = input.nextInt();switch(userInput){case 0: phoneSec = false; continue;default: System.out.println("Invalid directory");break;}}break;
+								case 6: while(changeAccess){System.out.println("Change access codes");userInput = input.nextInt();switch(userInput){case 0: changeAccess = false; continue;default: System.out.println("Invalid directory");break;}}break;
 								default: System.out.println("Invalid directory");break;
 }
 }
 continue;
-						case 4: System.out.println("Restore factory settings");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+						case 4: while(restoreFactory){System.out.println("Restore factory settings");userInput = input.nextInt();switch(userInput){case 0: restoreFactory = false; continue;default: System.out.println("Invalid directory");break;}}break;
 						default: System.out.println("Invalid directory");break;
 						
 }				
 
 }
 continue;
-				case 7: System.out.println("Call Divert");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-				case 8: System.out.println("Games");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-				case 9: System.out.println("Calculator");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-				case 10: System.out.println("Reminder");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+				case 7: while(callDivert){System.out.println("Call Divert");userInput = input.nextInt();switch(userInput){case 0: callDivert = false; continue;default: System.out.println("Invalid directory");break;}}break;
+				case 8: while(games){System.out.println("Games");userInput = input.nextInt();switch(userInput){case 0: games = false; continue;default: System.out.println("Invalid directory");break;}}break;
+				case 9: while(calculator){System.out.println("Calculator");userInput = input.nextInt();switch(userInput){case 0: calculator = false; continue;default: System.out.println("Invalid directory");break;}}break;
+				case 10: while(reminder){System.out.println("Reminder");userInput = input.nextInt();switch(userInput){case 0: reminder = false; continue;default: System.out.println("Invalid directory");break;}}break;
 				case 11: 
 while(clock){
 clockSet = """
@@ -445,20 +537,26 @@ clockSet = """
 6. Auto update of date and time""";
 System.out.println(clockSet);
 userInput = input.nextInt();
+Boolean autoUpdateDateTime = true;
+Boolean countTimer = true;
+Boolean stopWatch = true;
+Boolean dateSet = true;
+Boolean clockSettings = true;
+Boolean alarmClock = true;
 					switch(userInput){
 						case 0: clock = false; break;
-						case 1: System.out.println("Alarm clock");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 2: System.out.println("Clock settings");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 3: System.out.println("Date settings");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 4: System.out.println("Stopwatch");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 5: System.out.println("Countdown timer");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-						case 6: System.out.println("Auto update of date and time");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+						case 1: while(alarmClock){System.out.println("Alarm clock");userInput = input.nextInt();switch(userInput){case 0: alarmClock = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 2: while(clockSettings){System.out.println("Clock settings");userInput = input.nextInt();switch(userInput){case 0: clockSettings = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 3: while(dateSet){System.out.println("Date settings");userInput = input.nextInt();switch(userInput){case 0: dateSet = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 4: while(stopWatch){System.out.println("Stopwatch");userInput = input.nextInt();switch(userInput){case 0: stopWatch = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 5: while(countTimer){System.out.println("Countdown timer");userInput = input.nextInt();switch(userInput){case 0: countTimer = false; continue;default: System.out.println("Invalid directory");break;}}break;
+						case 6: while(autoUpdateDateTime){System.out.println("Auto update of date and time");userInput = input.nextInt();switch(userInput){case 0: autoUpdateDateTime = false; continue;default: System.out.println("Invalid directory");break;}}break;
 						default: System.out.println("Invalid directory");break;
 }
 }
 continue;
-				case 12: System.out.println("Profile");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
-				case 13: System.out.println("SIM services");userInput = input.nextInt();switch(userInput){case 0: continue;}break;
+				case 12: while(profile){System.out.println("Profile");userInput = input.nextInt();switch(userInput){case 0: profile = false; continue;default: System.out.println("Invalid directory");break;}}break;
+				case 13: while(simServices){System.out.println("SIM services");userInput = input.nextInt();switch(userInput){case 0: simServices = false; continue;default: System.out.println("Invalid directory");break;}}break;
 				default: System.out.println("Invalid directory");break;
 }
 }
