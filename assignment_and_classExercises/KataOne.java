@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class KataOne{
+public class Kata{
 	
 	public static boolean trueEvenFalseOdd(int userInputInteger){
 		boolean evenOrOdd;
